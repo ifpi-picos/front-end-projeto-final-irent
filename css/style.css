@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/Hasentree-Living-Roon.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.login {
+    font-family: Arial;
+    width: 450px;
+    margin: auto;
+    /* border-radius: 20px; */
+    text-align: float;
+    padding: 3% 0px;
+    /* background-color: rgba(255, 255, 255, 0.31); */
+    background-color: rgba(6, 5, 5, 0.33);
+    -moz-box-shadow: 10px 3px 66px -19px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 3px 66px -19px rgba(0, 0, 0, 0.75);
+    position: relative;
+    margin-top: 145px;
+    line-height: 60px;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-left: 57px;
+}
+
+.label-float input {
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance: none;
+    border-radius: 0; 
+}
+
+.label-float input,
+label:focus {
+    border-bottom: 2px solid #7ed957;
+}
+
+input[type="text"] {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: rgba(87, 102, 103, 0.59);
+    width: 55%;
+    height: 44px;
+    padding: 12px 15px;
+}
+
+.input-nome {
+    border-radius: 25px;
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    margin-top: -18px;
+    color: #7ed957;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+label {
+    color: white;
+    margin: 14px 16px;
+}
+
+input[type="submit"] {
+    border-radius: 25px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:active {
+    border: none;
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: #7ed957;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    cursor: pointer;
+}
+
+.recuperar-submit {
+    width: 84%;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.recuperar-senha {
+    margin: 14px 16px;
+    width: 84%;
+    margin-left: 50%;
+    text-decoration: none;
+    color: white;
+}
+
+.log-in {
+    width: 84%;
+}
+
+input {
+    background-color: rgba(87, 102, 103, 0.59);
+    width: 55%;
+    height: 44px;
+    padding: 12px 15px;
+}
+
+input[type="text"] {
+    border-radius: 25px;
+    border: none;
+    width: 84%;
+    color: white;
+}
+
+.body-cadastro {
+    background-image: none;
+    display: inline-block;
+    width: 100%;
+}
+.container{
+    width: 50%;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    margin: auto;
+}
+.album-anunciar{
+    display: grid;
+}
+.imagen-album{
+    width: 300px;
+}
+
+.imagen-destaque-cadastro {
+    width: 460px;
+}
+
+label {
+    color: green;
+    float: left;
+}
+
+.dados {
+    width: 50%; 
+    height: 100px;
+}
+
+.dados-imovel {
+    background-color: black;
+    height: 100px;
+    width: 25%;
+}
+
+.localizacao {
+    background-color: blueviolet;
+    width: 25%;
+    height: 50%;
+}
