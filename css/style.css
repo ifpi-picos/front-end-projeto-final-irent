@@ -15,6 +15,10 @@ h2 {
     color: white;
 }
 
+.subtitulo-cadastro {
+    color: black;
+}
+
 .login {
     font-family: Arial;
     width: 450px;
@@ -47,22 +51,12 @@ h2 {
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -webkit-appearance: none;
-    border-radius: 0; 
+    border-radius: 0;
 }
 
 .label-float input,
 label:focus {
     border-bottom: 2px solid #7ed957;
-}
-
-input[type="text"] {
-    border-radius: 25px;
-    border: none;
-    color: white;
-    background-color: rgba(87, 102, 103, 0.59);
-    width: 55%;
-    height: 44px;
-    padding: 12px 15px;
 }
 
 .input-nome {
@@ -136,7 +130,7 @@ input {
     padding: 12px 15px;
 }
 
-input[type="text"] {
+.input-login-cadastro[type="text"] {
     border-radius: 25px;
     border: none;
     width: 84%;
@@ -148,30 +142,101 @@ input[type="text"] {
     display: inline-block;
     width: 100%;
 }
-.container{
+
+.container {
     width: 50%;
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     margin: auto;
 }
-.album-anunciar{
+
+.album-anunciar {
     display: grid;
+    text-align-last: center;
 }
-.imagen-album{
+
+.imagen-album {
     width: 300px;
 }
 
 .imagen-destaque-cadastro {
     width: 460px;
+    text-align-last: center;
+}
+
+.imagen-destaque-cad {
+    text-align-last: center;
+}
+
+.input-foto {
+    text-align-last: center;
 }
 
 label {
-    color: green;
     float: left;
 }
 
 .dados {
-    width: 50%; 
+    width: 50%;
     height: 100px;
+}
+
+.input-cadastro {
+    background-color: white;
+    border: 1px solid #979797;
+}
+
+.input-cadastro-bloq {
+    background-color: #f7f7f7;
+    border-color: #e7e7e7;
+    color: #979797;
+    cursor: not-allowed;
+}
+
+.local-imovel {
+    grid-row: 1;
+    grid-column: 1/4;
+    padding: 16px 12px;
+    -webkit-appearance: none;
+}
+
+.input-local-imovel {
+    margin: 12px 107px;
+}
+
+.cidade-uf {
+    display: flex;
+}
+
+.input-cidade {
+    width: 241px;
+}
+
+.input-uf {
+    margin: 0 13px;
+}
+
+.tam-bairro-endereco {
+    width: 83%;
+}
+
+.num-complemento {
+    display: flex;
+}
+
+.tam-num-complemento {
+    width: 100%;
+}
+
+.input-numero {
+    float: left;
+}
+
+.input-complemento {
+    float: right;
+}
+
+.complemento {
+    margin: 0 6px;
 }
 
 .dados-imovel {

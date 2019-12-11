@@ -15,15 +15,69 @@
         <div>Compartilhe sua casa e conheça pessoas novas!</div>
         <div>
             <div class="titulo">Detalhes da propriedade</div>
-            <div><img class="imagen-destaque-cadastro" src="img/images.jpg" alt=""></div>
-            <input type="file" accept="image/png, image/jpeg">
+            <div class="imagen-destaque-cad"><img class="imagen-destaque-cadastro" src="img/images.jpg" alt=""></div>
+            <div class="input-foto">
+                <input type="file" accept="image/png, image/jpeg">
+            </div>
             <div class="album-anunciar">
                 <label for="album">Álbum</label>
                 <div class="imagens">
                     <img class="imagen-album" src="img/casa-orlando-alugar-sala-2-1024x683.jpg" alt="Imagen">
                     <img class="imagen-album" src="img/casa-orlando-alugar-sala-2-1024x683.jpg" alt="Imagen">
                 </div>
-                <input type="file" accept="image/png, image/jpeg">
+                <div class="input-foto">
+                    <input type="file" accept="image/png, image/jpeg">
+                </div>
+            </div>
+            <div class="local-imovel">
+                <h2 class="subtitulo-cadastro">Onde fica seu imóvel?</h2>
+                <div class="input-local-imovel">
+                    <div>
+                        <p>CEP</p>
+                    </div>
+                    <div>
+                        <input name="zipCode" data-cy="zip-code" maxlength="9" type="tel" value=""
+                            placeholder="00000-000" class="input-cadastro" onkeypress="return onlynumber();">
+                    </div>
+                </div>
+                <div class="input-local-imovel cidade-uf">
+                    <div>
+                        <input type="text" disabled="disabled" value="" placeholder="Cidade"
+                            class="input-cadastro input-cadastro-bloq input-cidade">
+                    </div>
+                    <div>
+                        <input type="text" disabled="disabled" placeholder="UF"
+                            class="input-cadastro input-cadastro-bloq input-uf">
+                    </div>
+                </div>
+                <div class="input-local-imovel">
+                    <input name="neighborhood" type="text" disabled="disabled" value="" placeholder="Bairro"
+                        class="input-cadastro input-cadastro-bloq tam-bairro-endereco">
+                </div>
+                <div class="input-local-imovel">
+                    <input name="street" type="text" disabled="disabled" value="" placeholder="Endereço"
+                        class="input-cadastro input-cadastro-bloq tam-bairro-endereco">
+                </div>
+                <div class="input-local-imovel num-complemento">
+                    <div>
+                        <div>
+                            <p>Número</p>
+                        </div>
+
+                        <div>
+                            <input id="streetNumber" name="streetNumber" data-cy="street-number" type="text" value=""
+                                placeholder="Ex. 123" class="input-cadastro tam-num-complemento input-numero">
+                        </div>
+                    </div>
+                    <div class="complemento">
+                        <div>
+                            <p>Complemento (Opcional)</p>
+                        </div>
+                        <div><input name="complement" autocomplete="nofill" type="text" value=""
+                                placeholder="Ex. apto 35, bloco B"
+                                class="input-cadastro tam-num-complemento input-complemento"></div>
+                    </div>
+                </div>
             </div>
             <div class="dados">
                 <div class="dados-imovel">
