@@ -141,12 +141,17 @@ input {
     background-image: none;
     display: inline-block;
     width: 100%;
+    background-color: #17cc1921;
+    font-family: Helvetica;
+    line-height: 45px;
 }
 
 .container {
     width: 50%;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     margin: auto;
+    margin-top: 12px;
+    background-color: white;
 }
 
 .album-anunciar {
@@ -173,11 +178,6 @@ input {
 
 label {
     float: left;
-}
-
-.dados {
-    width: 50%;
-    height: 100px;
 }
 
 .input-cadastro {
@@ -223,8 +223,12 @@ label {
     display: flex;
 }
 
-.tam-num-complemento {
+.tamanho-input-cadastro {
     width: 100%;
+}
+
+.input-descricao {
+    width: 441px;
 }
 
 .input-numero {
@@ -239,14 +243,96 @@ label {
     margin: 0 6px;
 }
 
-.dados-imovel {
-    background-color: black;
-    height: 100px;
-    width: 25%;
+.botao-cadastro {
+    background-color: green;
+    border: 1px solid #008295;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 4px;
+    height: 48px;
+    padding: 12px 24px;
+    margin-top: 12px;
+    margin-bottom: 30px;
 }
 
-.localizacao {
-    background-color: blueviolet;
-    width: 25%;
-    height: 50%;
+.botao-cadastro:hover {
+    background-color: #32CD32;
 }
+
+.titulo {
+    text-align-last: center;
+}
+
+.body-anuncio {
+    background-image: none;
+    font-family: Helvetica;
+}
+
+.imagens-da-casa {
+    object-fit: cover;
+    display: flex;
+}
+
+.imagens-anuncio {
+    cursor: pointer;
+    margin: 4px 2px;
+}
+
+.seta {
+    position: absolute;
+    margin: 165px 23px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.seta:hover {
+    color: #90EE90;
+
+}
+
+.seta-direita {
+    margin-left: 97%;
+}
+
+.dados-imovel {
+    margin: 13px 303px;
+    line-height: 40px;
+}
+
+.preco-aluguel {
+    font-size: 50px;
+}
+
+.detalhes-icones {
+    font-size: 45px;
+}
+
+.detalhes-icones-direito {
+    margin-left: 100px;
+}
+
+.detalhes-anuncio {
+    display: flex;
+    margin-top: 51px;
+}
+
+.numero-icone {
+    font-size: 19px;
+}
+
+.descricao-anuncio {
+    margin-top: 81px;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel__image {
+        height: 360px;
+        max-width: 500px;
+    }

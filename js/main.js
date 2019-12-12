@@ -1,11 +1,8 @@
-function onlynumber(evt) {
-   let theEvent = evt || window.event;
-   let key = theEvent.keyCode || theEvent.which;
-   key = String.fromCharCode(key);
-   //var regex = /^[0-9.,]+$/;
-   let regex = /^[0-9.]+$/;
-   if (!regex.test(key)) {
-      theEvent.returnValue = false;
-      if (theEvent.preventDefault) theEvent.preventDefault();
-   }
+function cep(evento) {
+   valor = evento.value
+   valor = valor.replace(/\D/g, "")
+   valor = valor.replace(/^(\d{2})(\d)/, "$1.$2")
+   valor = valor.replace(/\.(\d{3})(\d)/, "$1-$2")
+
+   evento.value = valor;
 }

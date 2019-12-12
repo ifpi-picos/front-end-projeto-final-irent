@@ -1,0 +1,1 @@
+.ads__container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;max-width:100%;overflow:hidden}.ads__container img{display:block;max-width:calc(100vw - 48px)}.ads__container:empty{padding:0}

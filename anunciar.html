@@ -11,8 +11,11 @@
 
 <body class="body-cadastro">
     <div class="container">
-        <div>Anuncie sua propriedade</div>
-        <div>Compartilhe sua casa e conheça pessoas novas!</div>
+        <div>
+            <h1 class="titulo">
+            Anuncie sua propriedade
+            </h1>
+        </div>
         <div>
             <div class="titulo">Detalhes da propriedade</div>
             <div class="imagen-destaque-cad"><img class="imagen-destaque-cadastro" src="img/images.jpg" alt=""></div>
@@ -36,8 +39,8 @@
                         <p>CEP</p>
                     </div>
                     <div>
-                        <input name="zipCode" data-cy="zip-code" maxlength="9" type="tel" value=""
-                            placeholder="00000-000" class="input-cadastro" onkeypress="return onlynumber();">
+                        <input name="zipCode" data-cy="zip-code" maxlength="9" type="text" pattern="[0-9]{9}" value=""
+                            placeholder="00000-000" class="input-cadastro" onkeypress="cep(this)" required>
                     </div>
                 </div>
                 <div class="input-local-imovel cidade-uf">
@@ -66,7 +69,7 @@
 
                         <div>
                             <input id="streetNumber" name="streetNumber" data-cy="street-number" type="text" value=""
-                                placeholder="Ex. 123" class="input-cadastro tam-num-complemento input-numero">
+                                placeholder="Ex. 123" class="input-cadastro tamanho-input-cadastro input-numero">
                         </div>
                     </div>
                     <div class="complemento">
@@ -75,22 +78,120 @@
                         </div>
                         <div><input name="complement" autocomplete="nofill" type="text" value=""
                                 placeholder="Ex. apto 35, bloco B"
-                                class="input-cadastro tam-num-complemento input-complemento"></div>
+                                class="input-cadastro tamanho-input-cadastro input-complemento"></div>
                     </div>
                 </div>
             </div>
-            <div class="dados">
-                <div class="dados-imovel">
+            <div class="dados-principais-imovel">
+                <h2 class="subtitulo-cadastro">Dados principais do imóvel</h2>
+                <div class="input-local-imovel num-complemento">
+                    <div>
+                        <div>
+                            <p>Quartos</p>
+                        </div>
+
+                        <div>
+                            <input id="streetNumber" name="streetNumber" data-cy="street-number" type="text" value=""
+                                placeholder="0" class="input-cadastro tamanho-input-cadastro">
+                        </div>
+                    </div>
+                    <div class="complemento">
+                        <div>
+                            <p>Banheiros
+
+                            </p>
+                        </div>
+                        <div><input name="complement" autocomplete="nofill" type="text" value="" placeholder="0"
+                                class="input-cadastro tamanho-input-cadastro"></div>
+                    </div>
+
+                </div>
+                <div class="input-local-imovel num-complemento">
+                    <div>
+                        <div>
+                            <p>Suítes (Opcional)</p>
+                        </div>
+
+                        <div>
+                            <input id="streetNumber" name="streetNumber" data-cy="street-number" type="text" value=""
+                                placeholder="0" class="input-cadastro tamanho-input-cadastro">
+                        </div>
+                    </div>
+                    <div class="complemento">
+                        <div>
+                            <p>Vagas (Opcional)</p>
+                        </div>
+                        <div><input name="complement" autocomplete="nofill" type="text" value="" placeholder="0"
+                                class="input-cadastro tamanho-input-cadastro"></div>
+                    </div>
+                </div>
+                <div class="input-local-imovel num-complemento">
+                    <div>
+                        <div>
+                            <p>Área útil (m²)</p>
+                        </div>
+
+                        <div>
+                            <input id="streetNumber" name="streetNumber" data-cy="street-number" type="text" value=""
+                                placeholder="0" class="input-cadastro tamanho-input-cadastro">
+                        </div>
+                    </div>
+                    <div class="complemento">
+                        <div>
+                            <p>Área total (m²) (Opcional)</p>
+                        </div>
+                        <div><input name="complement" autocomplete="nofill" type="text" value="" placeholder="0"
+                                class="input-cadastro tamanho-input-cadastro"></div>
+                    </div>
+                </div>
+                <div class="input-local-imovel num-complemento">
+                    <div>
+                        <div>
+                            <p>Andar (Opcional)</p>
+                        </div>
+
+                        <div>
+                            <input id="streetNumber" name="streetNumber" data-cy="street-number" type="text" value=""
+                                placeholder="0" class="input-cadastro tamanho-input-cadastro">
+                        </div>
+                    </div>
+                    <div class="complemento">
+                        <div>
+                            <p>Altura do pé direito (cm) (Opcional)</p>
+                        </div>
+                        <div><input name="complement" autocomplete="nofill" type="text" value="" placeholder="0"
+                                class="input-cadastro tamanho-input-cadastro"></div>
+                    </div>
+                </div>
+                <div class="input-local-imovel num-complemento">
+                    <div>
+                        <div>
+                            <p>Descrição (Opcional)</p>
+                        </div>
+
+                        <div>
+                            <textarea rows="4" name="description" maxlength="500" type="textarea" value=""
+                                class="input-cadastro tamanho-input-cadastro input-descricao"></textarea>
+                        </div>
+                        <span class="c2c-char-counter">0/500</span>
+                    </div>
+                </div>
+                <div class="input-local-imovel">
+                    <h2 class="subtitulo-cadastro">Quanto custa o aluguel do seu imóvel?</h2>
+                    <div>
+                        <p>Valor do aluguel</p>
+                    </div>
+                    <div>
+                        <input name="price" data-cy="price" maxlength="11" type="number" value="" placeholder="0" class="input-cadastro">
+                    </div>
+                    <button type="submit" class="botao-cadastro" data-cy="cta"><!----> Continuar</button>
+                </div>
+                <div class="dados">
+                    <div class="dados-imovel">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="dados">
-        <div class="dados-imovel">
-            sdfjsdofjshj
-        </div>
-        <div class="localizacao"></div>
-    </div>
 </body>
 
 <script src="js/main.js"></script>
