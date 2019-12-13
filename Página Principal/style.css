@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    height: 90px;
+    width: auto;
+}
+
+.logo{
+    max-width: 201.47px;
+    max-height: 80px;
+}
+
+.container{
+    max-width: auto;
+    height: auto;
+}
+
+.layer1{
+    height: 500px;
+    background-image: url('imagens/Background1.jpg');
+    background-size: 100%;
+    margin: auto;
+    max-width: 1920px;
+}
+
+.fundo{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 40%;
+    position: relative;
+}
+
+.t1{
+    font-size: 70px;
+    max-width: 450px;
+    max-height: 450px;
+    position: absolute;
+    color: #FFF;
+    margin: -400px 0 0 170px;
+    text-align: center;
+}
+
+.menu{
+    margin: 50px 40px 50px 60px;
+}
+
+.menu a{
+    color: #7ED957;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #228B22;
+}
+
+.entrar, .cadastrar{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.entrar{
+    color: #FFF;
+    padding: 6px 30px;
+    background-color: #FF9404;
+    border-radius: 5px;
+    margin: 40px 30px 50px 0;
+}
+
+.cadastrar{
+    color: #7ED957;
+    border: 2px solid #7ED957;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 40px 0 50px 0;
+}
+
+.entrar:hover{
+    background-color: #EE7600;
+}
+
+.cadastrar:hover{
+    background-color: #7ED957;
+    color: #FFF;
+}
+
+.itens-nav{
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.t2{
+    text-align: center;
+    font-size: 36px;
+    color: #7ED957;
+    text-shadow: 1px 1px #CCC;
+}
+
+hr{
+    width: 1000px;
+}
+
+.layer3{
+    height: 200px;
+    background-color: #7ED957;
+    margin: 30px auto 30px auto;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+footer{
+    height: 300px;
+    background-color: #7ED957;
+}
+
+.titulo-contato{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    padding: 30px;
+}
+
+.contatos img{
+    max-width: 100px;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+}
+
+.contatos div{
+    margin: 10px 30px 0px 30px;
+}
+
+select, input{
+    font-size: 20px;
+    height: 26px;
+    color: #424242;
+    padding: 6px 0px 6px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px #DDD;
+    margin: 30px 50px 30px 50px;
+}
+
+select{
+    height: 40px;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.info-pesquisa{
+    display: flex;
+    justify-content: center;
+}
+
+.layer5{
+    height: 800px;
+    background-image: url('imagens/key-2323278.jpg');
+    background-size: 100%;
+}
+
+.buscar{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #FF9404;
+    padding: 10px 20px;
+    font-size: 28px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.buscar:hover{
+    background-color: #EE7600;
+}
+
+.busca{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input{
+    width: 176px;
+}
+
+.t3, .t5{
+    margin: 30px 50px 30px 50px;
+    text-align: center;
+}
+
+.layer4{
+    color: #424242;
+    height: 1200px;
+}
+
+.lanc, .proc{
+    display: flex;
+    justify-content: center;
+}
+
+.imovel{
+    width: 300px;
+    height: 400px;
+    background-color: #EEE;
+    margin: 30px 50px 30px 50px;
+    box-shadow: 0.1px 0.1px 1px #424242;
+}
+
+.foto-imovel1{
+    height: 50%;
+    background-image: url('imagens/architecture-1477041.jpg');
+    background-size: 100%;
+}
+
+.nome-imovel, .valor-imovel{
+    font-weight: bold;
+    color: #7ED957;
+}
+
+.rua-imovel, .cidade-imovel{
+    color: #424242;
+}
+
+.nome-imovel, .valor-imovel, .rua-imovel, .cidade-imovel{
+    margin-left: 20px;
+}
+
+.valor-imovel{
+    color: #FF9404;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.valor-imovel:hover{
+    color: #EE7600;
+}
+
+.foto-imovel2{
+    height: 50%;
+    background-image: url('imagens/architecture-1836070_1920.jpg');
+    background-size: 100%;
+}
+
+.foto-imovel3{
+    height: 50%;
+    background-image: url('imagens/country-house-540796_1920.jpg');
+    background-size: 100%;
+}
+
+.cadastrar2{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #FF9404;
+    padding: 10px 60px;
+    font-size: 60px;
+    border-radius: 30px;
+    font-weight: bold;
+    float: right;
+    margin: 100px;
+}
+
+.cadastrar2:hover{
+    background-color: #EE7600;
+}
+
+.t4{
+    font-size: 60px;
+}
+
+.titulo4{
+    width: 310px;
+    margin: 50px 0 0 150px;
+    float: left;
+    color: #FFF;
+}
+span{
+    color: #7ED957;
+}
