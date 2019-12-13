@@ -10,26 +10,28 @@
 </head>
 
 <body class="body-cadastro">
-    <div class="container">
+    <div class="container container-cadastro">
         <div>
             <h1 class="titulo">
-            Anuncie sua propriedade
+                Anuncie sua propriedade
             </h1>
         </div>
         <div>
             <div class="titulo">Detalhes da propriedade</div>
             <div class="imagen-destaque-cad"><img class="imagen-destaque-cadastro" src="img/images.jpg" alt=""></div>
             <div class="input-foto">
-                <input type="file" accept="image/png, image/jpeg">
+                <input type="file" accept="image/png, image/jpeg" class="input-des-alb">
             </div>
             <div class="album-anunciar">
                 <label for="album">Álbum</label>
-                <div class="imagens">
-                    <img class="imagen-album" src="img/casa-orlando-alugar-sala-2-1024x683.jpg" alt="Imagen">
-                    <img class="imagen-album" src="img/casa-orlando-alugar-sala-2-1024x683.jpg" alt="Imagen">
+                <div class="imagens-anunciar">
+                    <img class="imagen-album imagen-album-esquerda" src="img/casa-orlando-alugar-sala-2-1024x683.jpg"
+                        alt="Imagen">
+                    <img class="imagen-album imagen-album-direita" src="img/casa-orlando-alugar-sala-2-1024x683.jpg"
+                        alt="Imagen">
                 </div>
                 <div class="input-foto">
-                    <input type="file" accept="image/png, image/jpeg">
+                    <input type="file" accept="image/png, image/jpeg" class="input-des-alb">
                 </div>
             </div>
             <div class="local-imovel">
@@ -157,7 +159,7 @@
                     </div>
                     <div class="complemento">
                         <div>
-                            <p>Altura do pé direito (cm) (Opcional)</p>
+                            <p>Altura do pé direito (Opcional)</p>
                         </div>
                         <div><input name="complement" autocomplete="nofill" type="text" value="" placeholder="0"
                                 class="input-cadastro tamanho-input-cadastro"></div>
@@ -173,22 +175,19 @@
                             <textarea rows="4" name="description" maxlength="500" type="textarea" value=""
                                 class="input-cadastro tamanho-input-cadastro input-descricao"></textarea>
                         </div>
-                        <span class="c2c-char-counter">0/500</span>
                     </div>
                 </div>
                 <div class="input-local-imovel">
-                    <h2 class="subtitulo-cadastro">Quanto custa o aluguel do seu imóvel?</h2>
+                    <h2 class="subtitulo-cadastro">Preço do aluguel?</h2>
                     <div>
                         <p>Valor do aluguel</p>
                     </div>
                     <div>
-                        <input name="price" data-cy="price" maxlength="11" type="number" value="" placeholder="0" class="input-cadastro">
+                        <input name="price" data-cy="price" maxlength="11" type="number" value="" placeholder="0"
+                            class="input-cadastro">
                     </div>
-                    <button type="submit" class="botao-cadastro" data-cy="cta"><!----> Continuar</button>
-                </div>
-                <div class="dados">
-                    <div class="dados-imovel">
-                    </div>
+                    <a href="anuncio.html"><button type="submit" class="botao-cadastro" data-cy="cta">
+                            <!----> Continuar</button></a>
                 </div>
             </div>
         </div>

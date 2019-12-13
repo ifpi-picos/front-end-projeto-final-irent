@@ -10,6 +10,10 @@ body {
     min-height: 100vh;
 }
 
+.corpo-pag {
+    overflow: hidden;
+}
+
 h2 {
     text-align: center;
     color: white;
@@ -33,6 +37,7 @@ h2 {
     position: relative;
     margin-top: 145px;
     line-height: 60px;
+    overflow: hidden;
 }
 
 .label-float {
@@ -154,17 +159,21 @@ input {
     background-color: white;
 }
 
+.container-cadastro {
+    width: 74%;
+}
+
 .album-anunciar {
     display: grid;
     text-align-last: center;
 }
 
 .imagen-album {
-    width: 300px;
+    width: 43%;
 }
 
 .imagen-destaque-cadastro {
-    width: 460px;
+    width: 90%;
     text-align-last: center;
 }
 
@@ -174,6 +183,11 @@ input {
 
 .input-foto {
     text-align-last: center;
+}
+
+.input-des-alb {
+    text-align-last: auto;
+    background-color: #0cad0e21;
 }
 
 label {
@@ -267,12 +281,14 @@ label {
 }
 
 .titulo {
-    text-align-last: center;
+    text-align: -webkit-center;
 }
 
 .body-anuncio {
     background-image: none;
     font-family: Helvetica;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .imagens-da-casa {
@@ -331,8 +347,77 @@ label {
     margin-top: 81px;
 }
 
-@media screen and (min-width: 768px) {
-    .carousel__image {
-        height: 360px;
-        max-width: 500px;
+.imagens-anunciar {
+    text-align: -webkit-center;
+
+}
+
+@media screen and (max-width: 728px) {
+    .body-cadastro {
+        flex-direction: column;
+
     }
+
+    .imagens-da-casa {
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+    .imagens-anunciar {
+        display: grid;
+    }
+
+    .input-local-imovel {
+        flex-wrap: wrap-reverse;
+        margin-left: 58px;
+    }
+
+    .botao-cadastro {
+        width: 131px;
+    }
+
+    .cidade-uf {
+        flex-wrap: wrap;
+    }
+
+    .input-uf {
+        margin-top: 12px;
+        margin-left: 0px;
+    }
+
+    .input-cadastro {
+        width: 100px;
+        text-align: -webkit-center;
+    }
+
+    .imagen-album {
+        width: 100%;
+    }
+
+    .imagen-album-esquerda {
+        width: 41%;
+        margin: 15px 28px;
+        float: left;
+    }
+
+    .imagen-album-direita {
+        width: 41%;
+        margin: 15px 28px;
+        float: right;
+    }
+
+    .imagen-destaque-cadastro {
+        width: 90%;
+    }
+
+    .imagen-destaque-cad {
+        margin: auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagens-anunciar {
+        text-align: -webkit-center;
+    }
+}
