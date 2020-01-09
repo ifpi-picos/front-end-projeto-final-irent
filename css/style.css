@@ -121,7 +121,7 @@ nav-index {
 
 hr {
     width: 1000px;
-    align-items: center;
+    margin: auto;
 }
 
 .layer2 {
@@ -138,7 +138,7 @@ hr {
     justify-items: center;
 }
 
-.rodape {
+#rodape {
     margin-top: -72;
 
 }
@@ -665,6 +665,14 @@ label {
 .imagens-anunciar {
     text-align: -webkit-center;
 
+}
+
+.body-listanuncios {
+    background-image: none;
+}
+
+.titulo-listanuncios {
+    color: #7ED957;
 }
 
 @media screen and (max-width: 728px) {
