@@ -1,2 +1,2 @@
 # iRent
-click [aqui](http://responsivo.surge.sh/)  🤓
+click [aqui](http://irent-2020.surge.sh/)  🤓
