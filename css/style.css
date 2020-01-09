@@ -170,9 +170,9 @@ footer {
 }
 
 select,
-input {
+.input-listanuncios {
     font-size: 20px;
-    height: 26px;
+    height: 41px;
     color: #424242;
     padding: 6px 0px 6px 10px;
     background-color: #fff;
